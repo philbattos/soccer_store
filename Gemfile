@@ -7,7 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 gem 'rspec-rails'
-
+gem 'capybara'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -43,7 +43,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-group :test do
-  gem 'capybara'
-end
+# group :test do
+#   gem 'capybara'
+# end
 

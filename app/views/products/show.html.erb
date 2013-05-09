@@ -1,25 +1,57 @@
-<p id="notice"><%= notice %></p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 
-<p>
-  <b>Product name:</b>
-  <%= @product.product_name %>
-</p>
+    <meta charset="utf-8">
+    <title>Soccer Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p>
-  <b>Description:</b>
-  <%= @product.description %>
-</p>
+    <!-- Loading Bootstrap -->
+    <%= stylesheet_link_tag "css/bootstrap" %>
 
-<p>
-  <b>Price:</b>
-  <%= @product.price %>
-</p>
+    <!-- Loading Flat UI -->
+    <%= stylesheet_link_tag "css/flat-ui" %>
+    <link rel="shortcut icon" href="images/favicon.ico">
 
-<p>
-  <b>Quantity:</b>
-  <%= @product.quantity %>
-</p>
+  </head>
+  <body>
+    <div class="container">
 
+      <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+      <p>
+        <b>Product name:</b>
+        <%= @product.product_name %>
+      </p>
+
+      <p>
+        <b>Description:</b>
+        <%= @product.description %>
+      </p>
+
+      <p>
+        <b>Price:</b>
+        <%= @product.price %>
+      </p>
+
+      <p>
+        <b>Quantity:</b>
+        <%= @product.quantity %>
+      </p>
+
+      <div class="row demo-row">
+        <div class="span1">
+          <a href="#" class="btn btn-large btn-block">Edit</a>
+        </div>
+        <div class="span1">
+          <a href="#" class="btn btn-large btn-block btn-primary">Back</a>
+        </div>
+      </div> <!-- /row -->
+
+      <%= link_to 'Edit', edit_product_path(@product) %> |
+      <%= link_to 'Back', products_path %>
+
+    </div>
+
+  </body>
+</html>

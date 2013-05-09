@@ -10,4 +10,6 @@
  *
  *= require_self
  *= require_tree .
+ *= require_bootstrap.css
+ *= require_flat_ui.css
  */
